@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 5001;
 
 const corsOptions = {
-  origin: ['http://localhost:3000', 'https://antixxtechhub.com'],
+  origin: ['http://localhost:3000', 'https://dotglobaltech.com'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,            //access-control-allow-credentials:true
   optionSuccessStatus: 200
