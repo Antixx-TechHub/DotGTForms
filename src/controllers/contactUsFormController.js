@@ -14,9 +14,9 @@ exports.postContactUsForm = async (req, res) => {
 
     const mailData = {
       from: email,
-      to: "info@antixxtechhub.com",
+      to: "info@dotglobaltech.com",
       subject: `${msg_subject}`,
-      html: `<p>Hello,</p> <p>You received a new application from <b>${name}</b> for the <b>${companyName} </b>position. </p>${msg_subject}<p ><b>Name :</b>${name}<br><b>Email :</b>${email}<br><b>Phone Number :</b> ${phone_number}<br><b>Country:</b> ${country}<br><b>Company Name:</b> ${companyName}<br><b>Message:</b> ${message}<br> </p><p>Best wishes,<br>Team Antixx TechHub</p>`,
+      html: `<p>Hello,</p> <p>You received a new application from <b>${name}</b> for the <b>${companyName} </b>position. </p>${msg_subject}<p ><b>Name :</b>${name}<br><b>Email :</b>${email}<br><b>Phone Number :</b> ${phone_number}<br><b>Country:</b> ${country}<br><b>Company Name:</b> ${companyName}<br><b>Message:</b> ${message}<br> </p><p>Best wishes,<br>Team Dot Global Technologies</p>`,
     };
     await new Promise((resolve, reject) => {
       transporter.sendMail(mailData, (err, info) => {
@@ -41,9 +41,9 @@ exports.postSubscribeForm = async (req, res) => {
     
         const mailData = {
         from: email,
-        to: "newsletter@antixxtechhub.com",
-        subject: `Subscribe to Antixx TechHub`,
-        html: `<p>Hello,</p> <p>You received a new application from <b>${email}</b> to subscribe to Antixx TechHub. </p><p>Best wishes,<br>Team Antixx TechHub</p>`,
+        to: "newsletter@dotglobaltech.com",
+        subject: `Subscribe to Dot Global Technologies`,
+        html: `<p>Hello,</p> <p>You received a new application from <b>${email}</b> to subscribe to Dot Global Technologies. </p><p>Best wishes,<br>Team Dot Global Technologies</p>`,
         };  
 
         await new Promise((resolve, reject) => {
